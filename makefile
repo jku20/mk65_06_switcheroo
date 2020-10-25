@@ -4,7 +4,10 @@ all : main.o
 main.o : main.c
 	gcc -c main.c
 
-.PHONY : clean
+.PHONY : clean run
 
 clean : 
 	rm *.o
+
+run: 
+	./main
